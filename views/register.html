@@ -70,26 +70,137 @@
         <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
       </div>
     </header>
-
-    <footer>
-        <div class="footer-div">
-            <i class="fa-solid fa-credit-card footer-icons"></i>
-            <h4 class="font-xl">Paga con tarjeta o en efectivo</h4>
-            <p class="font-lg">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </div>
-        <div class="footer-div">
-            <i class="fa-solid fa-gift footer-icons"></i>
-            <h4 class="font-xl">Envío gratis desde $2.500</h4>
-            <p class="font-lg">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
-        </div>
-        <div class="footer-div">
-            <i class="fa-solid fa-user-shield footer-icons"></i>
-            <h4 class="font-xl">Seguridad, de principio a fin</h4>
-            <p class="font-lg">¿No te gusta? ¡Devolvelo! En mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@</p>
-        </div>
+    <main class="p-1 vw-90 mx-auto">
+      <form action="/" class="mx-auto my-2 flex flex-column flex-wrap product-shadow bg-grey radius-1">
+        <label for="name" class="hidden">Nombre y apellido:</label>
+        <input 
+          type="text"
+          placeholder="Nombre y Apellido"
+          id="name"
+        />
+        <label for="userName" class="hidden">Nombre de Usuario:</label>
+        <input 
+          type="text"
+          placeholder="Nombre de Usuario"
+          id="userName"
+        />
+        <label for="birthday">Fecha de Nacimiento:</label>
+        <input 
+          type="date"
+          placeholder="Fecha de Nacimiento"
+          id="birthday"
+        />
+        <label for="adress" class="hidden">Domicilio:</label>
+        <input 
+          type="text"
+          placeholder="Domicilio"
+          id="adress"
+        />
+        <label for="userType">Perfil del usuario:</label>
         <div>
-            <p class="font-m">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+          <input 
+            type="radio" 
+            value="comprar"
+            name="userType"
+            id="buy"
+          />
+          <label for="buy">Comprador</label>
+          <input 
+            type="radio" 
+            value="Vender"
+            name="usertype"
+            id="sell"
+          />
+          <label for="sell">Vendedor</label>
         </div>
-    </footer>
+        <label for="interests">Intereses:</label>
+        <div>
+          <div>
+            <input 
+            type="checkbox" 
+            value="electro"
+            id="electro"
+            />
+            <label for="electro">Electro</label>
+          </div>
+          <div>
+            <input 
+            type="checkbox" 
+            value="moda"
+            id="moda"
+            />
+            <label for="moda">Moda</label>
+          </div>
+          <div>
+            <input 
+            type="checkbox" 
+            value="home"
+            id="home"
+            />
+            <label for="home">Hogar</label>
+          </div>
+          <div>
+            <input 
+            type="checkbox" 
+            value="toys"
+            id="toys"
+            />
+            <label for="toys">Juguetería</label>
+          </div>
+          <div>
+            <input 
+            type="checkbox" 
+            value="health"
+            id="health"
+            />
+            <label for="health">Vida sana</label>
+          </div> 
+        </div>
+        <label for="profileimg">Seleciona tu foto de perfil:</label>
+        <input 
+          type="file"
+          id="profileimg"
+          name="profileimg"
+          accept="image/png, image/jpeg"
+        /> 
+        <label for="password" class="hidden">Contraseña:</label>
+        <input 
+          type="password"
+          placeholder="Contraseña"
+          id="password"
+        />
+        <label for="repeatPassword" class="hidden">Repetir contraseña:</label>
+        <input 
+          type="password"
+          placeholder="Repetir contraseña"
+          id="repeatPassword"
+        />
+        <div class="text-center my-1">
+          <button type="submit" class="mx-auto bg-blue color-white radius-1">Enviar</button>
+          <button type="reset" class="mx-auto bg-blue color-white radius-1">Borrar Datos</button>
+        </div>
+       
+      </form>
+    </main>
+    <footer class="center-footer">
+      <div class="footer-div">
+          <i class="fa-solid fa-credit-card footer-icons"></i>
+          <h4 class="font-xl">Paga con tarjeta o en efectivo</h4>
+          <p class="font-lg">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+      </div>
+      <div class="footer-div">
+          <i class="fa-solid fa-gift footer-icons"></i>
+          <h4 class="font-xl">Envío gratis desde $2.500</h4>
+          <p class="font-lg">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+      </div>
+      <div class="footer-div">
+          <i class="fa-solid fa-user-shield footer-icons"></i>
+          <h4 class="font-xl">Seguridad, de principio a fin</h4>
+          <p class="font-lg">¿No te gusta? ¡Devolvelo! En mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@</p>
+      </div>
+      <div>
+          <p class="font-m ">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+      </div>
+  </footer>
   </body>
 </html>

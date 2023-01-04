@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -70,26 +70,42 @@
         <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
       </div>
     </header>
-
-    <footer>
-        <div class="footer-div">
-            <i class="fa-solid fa-credit-card footer-icons"></i>
-            <h4 class="font-xl">Paga con tarjeta o en efectivo</h4>
-            <p class="font-lg">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </div>
-        <div class="footer-div">
-            <i class="fa-solid fa-gift footer-icons"></i>
-            <h4 class="font-xl">Envío gratis desde $2.500</h4>
-            <p class="font-lg">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
-        </div>
-        <div class="footer-div">
-            <i class="fa-solid fa-user-shield footer-icons"></i>
-            <h4 class="font-xl">Seguridad, de principio a fin</h4>
-            <p class="font-lg">¿No te gusta? ¡Devolvelo! En mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@</p>
-        </div>
-        <div>
-            <p class="font-m">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-        </div>
-    </footer>
+    <main class="p-1 vw-90 mx-auto">
+      <form action="/" class="mx-auto my-2 flex flex-column flex-wrap product-shadow bg-grey radius-1">
+        <label for="userName" class="hidden">Nombre de Usuario</label>
+        <input 
+          type="text"
+          placeholder="Nombre de usuario"
+          id="userName"
+        />
+        <label for="password" class="hidden">Contraseña</label>
+        <input 
+          type="password"
+          placeholder="Elegí tu Contraseña"
+          id="password"
+        />
+        <button type="submit" class="mx-auto bg-blue color-white radius-1 my-1">Ingresá</button>
+      </form>
+    </main>
+    <footer class="center-footer">
+      <div class="footer-div">
+          <i class="fa-solid fa-credit-card footer-icons"></i>
+          <h4 class="font-xl">Paga con tarjeta o en efectivo</h4>
+          <p class="font-lg">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+      </div>
+      <div class="footer-div">
+          <i class="fa-solid fa-gift footer-icons"></i>
+          <h4 class="font-xl">Envío gratis desde $2.500</h4>
+          <p class="font-lg">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+      </div>
+      <div class="footer-div">
+          <i class="fa-solid fa-user-shield footer-icons"></i>
+          <h4 class="font-xl">Seguridad, de principio a fin</h4>
+          <p class="font-lg">¿No te gusta? ¡Devolvelo! En mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@</p>
+      </div>
+      <div>
+          <p class="font-m ">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+      </div>
+  </footer>
   </body>
 </html>
